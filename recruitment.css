@@ -230,14 +230,15 @@ header .title span{
     display: none;
 }
 
-.container .home_menu li #list::after {
+.container .home_menu ul a {
     content: '';
-    background: url('icon/contNav-arr.png') skyblue no-repeat center;
+    padding-right: 130px;
+    background: url('icon/contNav-arr.png') no-repeat right;
 }
 
 .container .content {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 
 }
 
