@@ -1,0 +1,410 @@
+body {
+  /* background: greenyellow; */
+  /* height: 100%; */
+  font-size: 14px;
+  position: relative;
+}
+/* header */
+header {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  
+  position: fixed;
+  opacity: 0.7;
+  border-bottom: 1px solid lightgray;
+}
+.whole {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+header:hover {
+  opacity: 1;
+}
+
+header .nav ul {
+  /* display: block; */
+  line-height: 50px;
+}
+header .nav .out .detail{
+  background: #fff;
+  width: 170px;
+  height: 400px;
+  padding-top: 10px;
+  padding-left: 0;
+  display: none;
+}
+header .nav .out .detail li {
+  font-size: 14px;
+  width: fit-content;
+  padding: 0 20px;
+}
+header .nav .out .detail li:first-child {
+  margin-top: 10px;
+}
+
+header .nav .out a {
+  padding-bottom: 14px;
+
+}
+
+header .nav .out li.b {
+  
+  font-weight: 700;
+
+  padding-right: 30px;
+}
+header .nav .out li.b a.B:hover {
+  display: block;
+  color: #89c1c5;
+  border-bottom: 4px solid #89c1c5;
+  
+}
+h
+header .nav .out .b .detail li:hover {
+  border-bottom: 1px solid red;
+}
+header .nav li {
+  /* background: red; */
+  float: left;
+  /* padding-right: 30px; */
+  list-style: none;
+  font-size: 17px;
+  /* display: inline; */
+  height: 40px;
+}
+header .nav select {
+  margin-top: 20px;
+  /* float: left; */
+}
+header .title{
+  float: left;
+  width: 160px;
+  margin-left: 100px;
+  margin-right: 300px;
+}
+
+header .title a {
+  background: url('logo.png') top / cover no-repeat;
+  margin: 10px;
+  padding: 5px;
+  z-index: 3000;
+  display: block;
+  background-size: 100% auto !important;
+  height: 40px;
+
+}
+header .title span{
+  display: none;
+}
+
+/* banner style */
+.main .banner {
+  background: url('top.png') no-repeat center/ cover;
+  height: 300px;
+  border: 0;
+  outline: 0;
+}
+.main .banner .intro{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+.main .banner .intro .title{
+  font-weight: 700;
+  font-size: 3em;
+  word-spacing: -0.2em;
+  margin-bottom: 30px;
+}
+.main .banner .intro .sub{
+  font-size: 16px;
+}
+
+
+/* bar style */
+.main .bar{                                   
+  /* background: lightcyan;  */
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main .bar section .home_menu{
+  height: 60px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bar section .home_menu #pic {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: url('ico-home.png') #5aafae center no-repeat;
+}
+
+.bar section .home_menu ul {
+  width: 200px;
+  height: 60px;
+  /* display: block; */
+  font-size: 16px;
+  margin: 0 0 0 60px;
+  padding-left: 20px;
+  position: relative;
+
+  float: left;
+  line-height: 60px;
+  border-right: 1px solid lightgray;
+}
+
+/* .container .home_menu ul #list {
+  width: 100%;
+} */
+
+
+.bar section .home_menu li {
+  text-decoration: none;
+  display: none;
+}
+
+.bar section .home_menu ul a {
+  content: '';
+  padding-right: 130px;
+  background: url('contNav-arr.png') no-repeat right;
+}
+
+/* content style */
+.main .content{
+  /* background: lightpink; */
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  
+}
+.main .content .guide{
+  /* border: 1px solid #000; */
+  padding: 20px;
+}
+.main .content h3{
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.main .content .backup {
+  border: 1px solid #d9d9d9;
+  padding: 40px;
+  display: flex;
+  
+}
+.main .content .backup li {
+  /* float: left; */
+  /* border: 1px solid #ccc;  */
+  width: 30%;
+  /* height: fit-content; */
+  margin: 0 1%;
+  /* padding: 20px; */
+  text-align: center; 
+  justify-content: space-evenly;
+  position: relative;;
+}
+.main .content .backup li .icon{
+  border: 1px solid #ccc;
+  background-color: #fafaf8 !important;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+.main .content .backup li .icon1 {
+  background: url('visut-guide01.png') no-repeat center/ 40px;
+}
+.main .content .backup li .icon2 {
+  background: url('visut-guide02.png') no-repeat center/ 40px;
+}
+.main .content .backup li .icon3 {
+  background: url('visut-guide03.png') no-repeat center/ 40px;
+}
+.main .content .backup li h4 {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.main .content .backup li h5 {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+/* .main .content .backup .space{
+  background: url('guide-arrow.png') no-repeat center / cover ;
+
+  width: 2%;
+  height: 50px;
+  float: left;
+  margin-top: 95px;
+} */
+
+.main .content .backup li:nth-child(2)::before,
+.main .content .backup li:nth-child(3)::before{
+  content: '';
+  background: url('guide-arrow.png') no-repeat center / 50px;
+  width: 7%;
+  height: 50px;
+  float: left;
+  /* margin-top: 95px; */
+  position: absolute;
+  left: -10%;
+  top: 50%;
+}
+.main .content .backup a{
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 5px;
+  /* display: block; */
+  padding: 10px 30px;
+  transition: 0.4s;
+}
+.main .content .backup a:hover{
+  background: #000;
+  color: #fff;
+}
+
+.main .content .gap {
+  margin-top: 20px;
+}
+.main .content .list {
+  border: 1px solid #d9d9d9;
+  padding: 36px 30px;
+  font-size: 1.1em;
+  line-height: 2;
+}
+
+.main .content .list li {
+  padding-left: 20px;
+}
+.main .content .list li span {
+  color: #5aafae;
+}
+
+.main .content .list li a{
+  text-decoration: underline #5aafae;
+}
+.main .content .gap2 {
+  margin-bottom: 40px;
+}
+.main .content .bottom {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .content .bottom a{
+  border: 1px solid #5aafae;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #5aafae;
+  border-radius: 5px;
+  width: 150px;
+  line-height: 40px;
+  margin: 0 5px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.main .content .bottom a:hover{
+  color:#fff;
+  background: #5aafae;
+}
+
+/* footer */
+.total_footer {
+  background: #5AAfAE;
+  width: 100%;
+}
+.total_footer .sub_footer {
+  padding: 40px 20px;
+  margin: 0 auto;
+  width: 60%;
+}
+.total_logo {
+  padding-left: 170px;
+  position: relative;
+}
+.total_footer .sub_footer .logo {
+  background: url('f-logo.png') no-repeat left center;
+  width: 100px;
+  height: 30px;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+.total_footer .sub_footer .total_logo p {
+  color: #fff;
+  line-height: 15px;
+}
+
+/* quickmenu */
+/* .container {
+  position: relative;
+} */
+  .quickmenu {
+  position: fixed;
+  top: 30%;
+  /* position: absolute; */
+  right: 20px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  /* transition: 0.3s ease-in-out; */
+  box-shadow: 0px 0px 12px rgb(0, 0, 0, 30%);
+  background: #fff;
+
+}
+.quickmenu ul {
+  width: 120 px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ .quickmenu ul li{
+  /* display: flex; */
+  text-align: center;
+  margin-top: 20px;
+  /* transition: 0.3s; */
+}
+
+ .quickmenu ul li .icon{
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #d9d9d9; */
+  border-radius: 50%;
+  background-color: #fafaf8 !important;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+ .quickmenu ul li .icon1{
+  background: url('quick-ico01.png') no-repeat center / 30px ;
+}
+ .quickmenu ul li .icon2{
+  background: url('quick-ico02.png') no-repeat center / 30px ;
+}
+ .quickmenu ul li .icon3{
+  background: url('quick-ico03.png') no-repeat center / 30px ;
+}
+ .quickmenu ul li .icon4{
+  background: url('kakao_chat.png') no-repeat center / 30px ;
+}
+ .quickmenu ul li:hover .icon{
+  background-color: rgb(222, 220, 220) !important;
+}
+  .quickmenu ul li span{
+  font-size: 12px;
+}
