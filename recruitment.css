@@ -1,4 +1,4 @@
-@import url('common.css');
+@import url('hcommon.css');
 /* quickmenu */
 /* quickmenu */
 /* {
@@ -239,7 +239,7 @@ header .title span{
 .container .content {
     width: 80%;
     margin: 0 auto 100px;
-
+    padding-left: 15%;
 }
 
 .container .content h2 {
