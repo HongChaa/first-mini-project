@@ -1,0 +1,593 @@
+@import url('성훈common.css');
+
+/* header */
+header {
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+
+    position: fixed;
+    opacity: 0.7;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.whole {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+header .nav ul {
+    /* display: block; */
+    line-height: 50px;
+}
+
+header .nav .out .detail {
+    background: #fff;
+    width: 170px;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 0;
+    display: none;
+}
+
+header .nav .out .detail li {
+    font-size: 14px;
+    width: fit-content;
+    padding: 0 20px;
+}
+
+header .nav .out .detail li:first-child {
+    margin-top: 10px;
+}
+
+header .nav .out a {
+    padding-bottom: 14px;
+
+}
+
+header .nav .out li.b {
+
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+header .nav .out li.b a.B:hover {
+    display: block;
+    color: #89c1c5;
+    border-bottom: 4px solid #89c1c5;
+
+}
+
+header .nav .out .b .detail li:hover {
+    border-bottom: 1px solid red;
+}
+
+header .nav li {
+    /* background: red; */
+    float: left;
+    /* padding-right: 30px; */
+    list-style: none;
+    font-size: 17px;
+    /* display: inline; */
+    height: 40px;
+}
+
+header .nav select {
+    margin-top: 20px;
+    /* float: left; */
+}
+
+header .title {
+    float: left;
+    width: 160px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+header .title a {
+    background: url('img/f-logo.png') top / cover no-repeat;
+    margin: 10px;
+    padding: 5px;
+    z-index: 3000;
+    display: block;
+    background-size: 100% auto !important;
+    height: 40px;
+
+}
+
+header .title span {
+    display: none;
+}
+
+
+
+/* quickmenu */
+/* {
+  position: relative;
+} */
+.quickmenu {
+    position: fixed;
+    top: 30%;
+    /* position: absolute; */
+    right: 20px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    /* transition: 0.3s ease-in-out; */
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 30%);
+    background: #fff;
+
+}
+
+.quickmenu ul {
+    width: 120 px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quickmenu ul li {
+    /* display: flex; */
+    text-align: center;
+    margin-top: 20px;
+    /* transition: 0.3s; */
+}
+
+.quickmenu ul li .icon {
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #d9d9d9; */
+    border-radius: 50%;
+    background-color: #f4f4f4 !important;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.quickmenu ul li .icon1 {
+    background: url('img/quick-ico01.png') no-repeat center / 30px;
+}
+
+.quickmenu ul li .icon2 {
+    background: url('img/quick-ico02.png') no-repeat center / 30px;
+}
+
+.quickmenu ul li .icon3 {
+    background: url('img/quick-ico03.png') no-repeat center / 30px;
+}
+
+.quickmenu ul li .icon4 {
+    background: url('img/kakao_chat.png') no-repeat center / 30px;
+}
+
+.quickmenu ul li:hover .icon {
+    background-color: rgb(222, 220, 220) !important;
+}
+
+.quickmenu ul li span {
+    font-size: 12px;
+}
+
+
+
+/* home_icon */
+section.home_icon {
+    border-bottom: 1px solid lightgray;
+}
+
+section.home_icon .home_menu {
+    height: 60px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+section.home_icon .home_menu #pic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url('img/home.png') #5aafae center no-repeat;
+}
+
+section.home_icon .home_menu ul {
+    width: 200px;
+    height: 60px;
+    /* display: block; */
+    font-size: 16px;
+    margin: 0 0 0 60px;
+    padding-left: 20px;
+    position: relative;
+
+    float: left;
+    line-height: 60px;
+    border-right: 1px solid lightgray;
+}
+
+/* .container .home_menu ul #list {
+    width: 100%;
+} */
+
+section.home_icon .home_menu li {
+    text-decoration: none;
+    display: none;
+}
+
+section.home_icon .home_menu ul a {
+    content: '';
+    padding-right: 50px;
+    background: url('img/contNav-arr.png') no-repeat right;
+    width: 200px;
+    height: 60px;
+}
+
+
+
+/* img style */
+section {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+section .top {
+    width: 100%;
+    height: 45vh;
+    background: url('img/top.png') center / cover no-repeat;
+    padding: 120px 0;
+}
+
+section .top p {
+    text-align: center;
+    margin: 0;
+}
+
+section .top .ttxt {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+section .top .stxt {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* inst */
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 10px 76px 20px;
+}
+
+.inst {
+    text-align: center;
+}
+
+.inst .atxt {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 2.0em;
+}
+
+.inst .btxt {
+    margin: 30px 0;
+}
+
+.inst .ab {
+    color: #0433ff;
+    font-weight: 700;
+}
+
+.inst .ctxt {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.inst .dtxt {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+/* filter */
+.filter {
+    padding: 0;
+}
+
+.filter .outter-filter {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.filter .outter-filter .f1 {
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+
+.filter .outter-filter .f2 {
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+
+.filter .outter-filter .s {
+    padding: 7px;
+}
+
+#category1,
+#category2 {
+    width: 300px;
+    height: 35px;
+    line-height: 40px;
+}
+
+.filter #btn_price {
+    width: 190px;
+    height: 40px;
+    font-size: 13px;
+    padding: 5px 7px;
+    background: #5AAfAE;
+    float: right;
+    border: none;
+    color: white;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+/* graph1 */
+.tgr .gr1 {
+    border-top: 2px solid #000;
+    width: 100%;
+}
+
+.tgr .gr1 .tr1 {
+    border-right: none;
+}
+
+.tgr .gr1 th {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background: #fafafa;
+}
+
+.tgr .gr1 td {
+    padding: 30px;
+    text-align: left;
+    color: #058D8B;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.tgr p {
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.tgr .p1 {
+    margin-top: 16px;
+    position: relative;
+}
+
+.tgr .p2 {
+    margin-top: 16px;
+}
+
+.tgr span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/* <!-- AppleCare+금액  --> */
+.service .plan h4 {
+    margin-bottom: 16px;
+}
+
+.service .plan {
+    margin-top: 76px;
+}
+
+.plan .s1 {
+    border: 1px solid #000;
+    float: right;
+    font-size: 11px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.plan .gr2 {
+    border-top: 2px solid #000;
+    width: 100%;
+}
+
+.plan .gr2 thead th {
+    text-align: center;
+}
+
+.plan .gr2 thead th:last-child {
+    border-right: 0px;
+}
+
+.plan .gr2 th {
+    background: #fafafa;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    padding: 36px 24px;
+    color: #2c2c2c;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-align: left;
+    width: 50%;
+}
+
+.plan .gr2 td {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 36px 24px;
+    color: #058d8b;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+
+
+/* AppleCare+ 구매 관련 안내 */
+.service .plan .top_comment {
+    margin-top: 16px;
+}
+
+.service .plan .comment {
+    padding: 0;
+}
+
+.service .plan .comment .list {
+    font-weight: 700;
+}
+
+.service .plan .top_comment li {
+    line-height: 20px;
+}
+
+.comment .list::before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    border-radius: 100%;
+    background: #000;
+}
+
+
+
+/* 민트 배경 */
+.service .bot_comment {
+    margin-top: 76px;
+    padding: 24px;
+    background: #ebfff9;
+}
+
+.service .bot_comment .comment li {
+    font-size: 14px;
+}
+
+.comment li {
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    position: relative;
+    padding-left: 10px;
+
+}
+
+.comment .circle::before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    border-radius: 100%;
+    background: #000;
+}
+
+
+
+/* footer */
+.total_footer {
+    background: #5AAfAE;
+    width: 100%;
+}
+
+.total_footer .sub_footer {
+    padding: 40px 20px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.total_logo {
+    padding-left: 170px;
+    position: relative;
+}
+
+.logo {
+    background: url('img/logo.png') no-repeat left center;
+    width: 100px;
+    height: 30px;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.total_footer .sub_footer .total_logo p {
+    color: #fff;
+    line-height: 15px;
+}
+
+.total_footer .sub_footer .total_logo .top_p a {
+    font-size: 13px;
+}
+
+.total_logo .mid_p {
+    margin-top: 20px;
+}
+
+.total_logo .mid_p {
+    margin-top: 20px;
+}
+
+.total_logo .add_p {
+    margin-top: 10px;
+}
+
+.total_logo .copy_p {
+    margin-top: 10px;
+}
+
+.total_logo .copy_p span {
+    font-size: 14px;
+}
+
+.total_logo .mid_p span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+

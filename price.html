@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="price.css">
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header class="clearfix">
+        <div class="whole">
+            <div class="title">
+                <a href="#"><span>tuva</span></a>
+            </div>
+            <div class="nav clearfix">
+                <ul class="out clearfix">
+                    <li class="b"><a href="#" class="B">Apple 공인 서비스</a>
+                        <ul class="detail">
+                            <li><a href="#">방문전 준비사항</a></li>
+                            <li><a href="#">방문예약</a></li>
+                            <li><a href="#">위치안내</a></li>
+                            <li><a href="#">서비스 가격</a></li>
+                            <li><a href="#">픽업서비스</a></li>
+                            <li><a href="#">대량(기업)수리문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="b"><a href="#" class="B">고객의 소리</a>
+                        <ul class="detail">
+                            <li><a href="#">칭찬합니다</a></li>
+                            <li><a href="#">개선해주세요</a></li>
+                        </ul>
+                    </li>
+                    <li class="b"><a href="#" class="B">채용</a></li>
+                    <li class="b"><a href="#" class="B">회사안내</a>
+                        <ul class="detail">
+                            <li><a href="#">ABOUT TUVA</a></li>
+                            <li><a href="#">INTERIOR</a></li>
+                            <li><a href="#">제휴사업 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="b"><a href="#" class="B">환경</a></li>
+                    <li>
+                        <select id="select language">
+                            <option value="">select language</option>
+                            <option>한국어</option>
+                            <option>English</option>
+                            <option>日本語</option>
+                            <option>中文(简体)</option>
+                            <option>中文(繁體)</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- quickmenu -->
+    <div class="quickmenu">
+        <ul>
+            <li>
+                <a href="http://www.tuva.co.kr/web/booking.do" class="icon icon1"></a>
+                <span>방문예약</span>
+            </li>
+            <li>
+                <a href="http://www.tuva.co.kr/web/location.do" class="icon icon2"></a>
+                <span>위치안내</span>
+            </li>
+            <li>
+                <a href="http://www.tuva.co.kr/web/price.do" class="icon icon3"></a>
+                <span>서비스가격</span>
+            </li>
+            <li>
+                <a href="#" class="icon icon4"></a>
+                <span>카카오톡</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="top">
+            <p class="ttxt">서비스 가격</p>
+            <p class="stxt">Pricing and Service Information</p>
+        </div>
+
+        <!-- home icon -->
+        <section class="home_icon">
+            <div class="home_menu">
+                <a href="#" id="pic">
+                </a>
+                <ul><a href="#">서비스가격</a>
+                    <li>
+                        <a href="#" id="list">
+                            서비스가격
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- inst -->
+        <div class="container">
+            <div class="service">
+                <div class="inst">
+                    <h1 class="atxt">고객님의 Apple 제품을 위한 우수한 서비스는 Apple에서 보증합니다.</h1>
+                    <p class="btxt">Apple 제품 서비스는 Apple에서 교육받은 공인 테크니션에게 맡겨 주십시오.</p>
+                    <p class="ab ctxt">iPhone 보증 제외 수리 및 AppleCare+ 구입 금액은 10% 할인된 금액이며 2023년 3월 28일까지 적용됩니다.</p>
+                    <p class="ab dtxt">참고 : 필요한 경우 Apple에서는 할인 기간을 업데이트 할 수 있습니다.</p>
+                </div>
+
+                
+                <!-- filter -->
+                <div class="filter clearfix">
+                    <div class="outter-filter clearfix">
+                        <div class="f1">
+                            <span class="s">제품군</span>
+                            <span class="check">
+                                <select id="category1">
+                                    <option value="iphone">iPhone</option>
+                                    <option value="iPad">iPad</option>
+                                    <option value="watch">watch</option>
+                                    <option value="airpods">airpods</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="f2">
+                            <span class="s">모델</span>
+                            <span class="check">
+                                <select id="category2">
+                                    <option value="iPhone 14 ProMax">iPhone 14 ProMax</option>
+                                    <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                                    <option value="iPhone14">iPhone14</option>
+                                    <option value="iPhone14 Plus">iPhone14 Plus</option>
+                                </select>
+                            </span>
+                        </div>
+                        <button id="btn_price">iPhone 대한민국 서비스 할인</button>
+                    </div>
+
+
+                    <!-- graph1 -->
+                    <div class="tgr">
+                        <table class="gr1">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>AppleCare+ 보증수리</th>
+                                    <th class="tr1">보증제외 수리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>디스플레이 수리</th>
+                                    <td>￦ 40,000</td>
+                                    <td class="tr1">￦ 588,000</td>
+                                </tr>
+                                <tr>
+                                    <th>후면 교체</th>
+                                    <td>￦ 40,000 (전/후면 손상 80,000)</td>
+                                    <td class="tr1">￦ 843,000</td>
+                                </tr>
+                                <tr>
+                                    <th>제품 교체</th>
+                                    <td>￦ 120,000</td>
+                                    <td class="tr1">￦ 1,077,000 (전/후면 손상 975,000)</td>
+                                </tr>
+                                <tr>
+                                    <th>배터리 교체</th>
+                                    <td>-</td>
+                                    <td class="tr1">￦ 131,400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="p1"> 서비스 비용은 Apple Store 및 Apple의 서비스 제공 업체별로 다를 수 있습니다.
+                            <span>* 단위 : 원, VAT 포함가</span>
+                        </p>
+                        <p>후면 시스템 수리는 iPhone 12, 13 제품군 및 14 Pro, 14 Pro Max에서만 진행 가능하며, 디스플레이 및 후면 카메라를 제외한 부품 수리입니다.
+                        </p>
+                        <p>중간 시스템 수리는 iPhone 14 및 iPhone 14 Plus에서 디스플레이, 후면 유리 및 후면 카메라를 제외한 부품 수리입니다.</p>
+                        <p>이외 제품의 비용은 당사 고객센터(1522-6222) 또는 전국 TUVA 센터 매장에서 확인하실 수 있습니다.</p>
+                        <p class="p2">새로운 부품 또는 제품을 사용하거나 Apple 기능 요구사항 테스트를 통과한 이전에 사용한 Apple 정품 부품을 이용해 서비스를 제공할 수
+                            있습니다.
+                        </p>
+                    </div>
+
+                    <!-- AppleCare+금액 -->
+                    <div class="plan">
+                        <h4>
+                            <span>AppleCare+금액</span>
+                            <span class="s1">구매를 위한 방문예약 바로가기></span>
+                        </h4>
+                        <table class="gr2">
+                            <thead>
+                                <tr>
+                                    <th>구매제품군</th>
+                                    <th>AppleCare+</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        iPhone 14 Pro / Pro Max <br>
+                                        iPhone 13 Pro / Pro Max <br>
+                                        iPhone 12 Pro / Pro Max <br>
+                                        iPhone 11 Pro / Pro Max <br>
+                                        iPhone X/ XS/ XS MAX <br>
+                                    </th>
+                                    <td>￦ 296,000</td>
+                                </tr>
+                                <tr>
+                                    <th>iPhone 14 Plus</th>
+                                    <td>￦ 233,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        iPhone 14 <br>
+                                        iPhone 13 / 13 mini <br>
+                                        iPhone 12 / 12 mini <br>
+                                        iPhone 11 <br>
+                                    </th>
+                                    <td>￦ 197,000</td>
+                                </tr>
+                                <tr>
+                                    <th>iPhone SE(3세대)</th>
+                                    <td>￦ 98,000</td>
+                                </tr>
+                                <tr>
+                                    <th>iPad Pro 12.9형(5세대, 6세대)</th>
+                                    <td>￦ 209,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        iPad Pro 12.9형(4세대 이전) <br>
+                                        iPad Pro 11형 <br>
+                                    </th>
+                                    <td>￦ 98,000</td>
+                                </tr>
+                                <tr>
+                                    <th>iPad Air(5세대)</th>
+                                    <td>￦ 129,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        iPad(9세대, 10세대) <br>
+                                        iPad mini(6세대) <br>
+                                        iPad Air(4세대 이전) <br>
+                                    </th>
+                                    <td>￦ 109,000</td>
+                                </tr>
+                                <tr>
+                                    <th>AirPods / Beats</th>
+                                    <td>￦ 69,000</td>
+                                </tr>
+                                <tr>
+                                    <th>AirPods Max</th>
+                                    <td>￦ 119,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Apple Watch ULTRA(Titanium)</th>
+                                    <td>￦ 159,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Apple Watch Series 8(Hermès)</th>
+                                    <td>￦ 249,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Apple Watch Series 8(Aluminium) <br>
+                                        Apple Watch Series 8(Stainless) <br>
+                                    </th>
+                                    <td>￦ 129,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Apple Watch Series 3 <br>
+                                        Apple Watch SE(1st gen, 2nd gen) <br>
+                                    </th>
+                                    <td>￦ 89,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Air(M1)</th>
+                                    <td>￦ 249,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Air(M2)</th>
+                                    <td>￦ 279,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        MacBook Air <br>
+                                        Mac Studio <br>
+                                    </th>
+                                    <td>￦ 219,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 13형(M1)</th>
+                                    <td>￦ 269,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 13형(M2)</th>
+                                    <td>￦ 299,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 13형(Intel)</th>
+                                    <td>￦ 289,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 14형</th>
+                                    <td>￦ 329,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 15형</th>
+                                    <td>￦ 449,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 16형(Intel)</th>
+                                    <td>￦ 449,000</td>
+                                </tr>
+                                <tr>
+                                    <th>MacBook Pro 16형(M1)</th>
+                                    <td>￦ 499,000</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Studio Display <br>
+                                        iMac <br>
+                                    </th>
+                                    <td>￦ 179,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Mac Pro</th>
+                                    <td>￦ 349,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Mac mini</th>
+                                    <td>￦ 119,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Pro Display XDR</th>
+                                    <td>￦ 619,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Apple TV</th>
+                                    <td>￦ 34,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- AppleCare+ 구매 관련 안내 -->
+                        <div class="top_comment">
+                            <ul class="comment">
+                                <li class="list">AppleCare+ 구매 관련 안내</li>
+                                <li>- 새 제품 구입 후 60일 이내에 구입 가능합니다.</li>
+                                <li>- 구입 후 60일 이내더라도, 제품에 손상이 존재하는 경우 우선적으로 수리가 진행되어야 합니다.</li>
+                                <li>- 본 상품은 제품 일련번호를 통하여 등록되며, 개인정보로 등록되지는 않습니다.</li>
+                                <li>- 제품 분실의 경우 보증범위에 해당하지 않습니다.</li>
+                                <li>- AppleCare+ 구매 시, 구매한 날로부터 보증기한이 2년(Mac의 경우 3년) 연장됩니다.</li>
+                                <li>- AppleCare+ 가입 기한 내에는 횟수에 제한 없이 서비스를 받으실 수 있습니다.</li>
+                                <li class="list">적용 가능 여부는 전국 TUVA 센터에서 확인하실 수 있습니다</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 민트 배경 -->
+                    <div class="bot_comment">
+                        <ul class="comment">
+                            <li class="circle">Apple 공인 서비스 센터는 Apple 정품 부품 만을 사용하고 있습니다.</li>
+                            <li class="circle">iPhone의 모델에 따라 디스플레이, iSight 카메라, 스피커, 리시버 등의 부분수리도 가능합니다.</li>
+                            <li class="circle">보증 기간 내 제품은 무상수리 입니다.
+
+                            <li>- 단, 보증기간 내에도 손상이 있는 경우 교체하기 전에 해당 문제를 먼저 해결해야 하며 경우에 따라서는 수리와 관련하여 비용이 부과될 수도 있습니다.
+                            </li>
+                            <li>- 자세한 내용은 당사 고객센터(1522-6222)로 문의 해주시기 바랍니다.></li>
+
+                            <li class="circle">서비스 가격은 교체된 부품 또는 제품을 반납하는 조건으로 책정 됩니다.</li>
+                            <li class="circle">유상 서비스 가격은 당사 사정에 따라 예고없이 변동될 수 있습니다(현재가격 2023년 03월 08일 기준)</li>
+                            <li class="circle">수리 완료 후 수리 취소는 불가합니다.</li>
+                            <li class="circle">충분한 재고를 보유 중입니다만, 일부 재고가 소진된 경우는 고객님의 제품은 안전하게 보관해 드리고 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="total_footer">
+            <div class="sub_footer">
+                <div class="total_logo">
+                    <span class="logo">
+                        <!--TUVA--></span>
+                    <p class="top_p">
+                        <a href="#">개인정보 처리 방침</a>
+                    </p>
+                    <p class="mid_p">
+                        <span>주식회사 투바 &nbsp;|&nbsp;</span>
+                        <span>대표 : 임종완 &nbsp;|&nbsp;</span>
+                        <span>전화 : 1522-6222 &nbsp;|&nbsp;</span>
+                        <span>사업자등록번호 : 207-81-51604 &nbsp;|&nbsp;</span>
+                        <span>통신판매신고 : 제2009-서울광진-0356호</span>
+                    </p>
+                    <p class="add_p">
+                        <span>본점 : 경기도 남양주시 수동면 남가로 1595-4</span>
+                    </p>
+                    <p class="copy_p">
+                        <span>Copyright ⓒ TUVA All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
