@@ -1,0 +1,473 @@
+@import url('common.css');
+/* quickmenu */
+/* quickmenu */
+/* {
+  position: relative;
+} */
+.quickmenu {
+    position: fixed;
+    top: 30%;
+    /* position: absolute; */
+    right: 20px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    /* transition: 0.3s ease-in-out; */
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 30%);
+    background: #fff;
+  
+  }
+   .quickmenu ul {
+    width: 120 px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .quickmenu ul li{
+    /* display: flex; */
+    text-align: center;
+    margin-top: 20px;
+    list-style: none;
+    /* transition: 0.3s; */
+  }
+  
+   .quickmenu ul li .icon{
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #d9d9d9; */
+    border-radius: 50%;
+    background-color: #eeeeee !important;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+  }
+  
+   .quickmenu ul li .icon1{
+    background: url('icon/quick-ico01.png') no-repeat center / 30px ;
+  }
+   .quickmenu ul li .icon2{
+    background: url('icon/quick-ico02.png') no-repeat center / 30px ;
+  }
+   .quickmenu ul li .icon3{
+    background: url('icon/quick-ico03.png') no-repeat center / 30px ;
+  }
+   .quickmenu ul li .icon4{
+    background: url('icon/kakao_chat.png') no-repeat center / 30px ;
+  }
+   .quickmenu ul li:hover .icon{
+    background-color: rgb(222, 220, 220) !important;
+  }
+   .quickmenu ul li span{
+    font-size: 12px;
+  }
+
+
+/* header */
+header {
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    
+    position: fixed;
+    opacity: 0.7;
+    border-bottom: 1px solid lightgray;
+}
+.whole {
+    width: 80%;
+    margin: 0 auto;
+}
+header:hover {
+    opacity: 1;
+}
+
+header .nav ul {
+    /* display: block; */
+    line-height: 50px;
+}
+header .nav .out .detail{
+    background: #fff;
+    width: 170px;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 0;
+    display: none;
+}
+header .nav .out .detail li {
+    font-size: 14px;
+    width: fit-content;
+    padding: 0 20px;
+}
+header .nav .out .detail li:first-child {
+    margin-top: 10px;
+}
+
+header .nav .out a {
+    padding-bottom: 14px;
+
+}
+
+header .nav .out li.b {
+    
+    font-weight: 700;
+    padding-right: 30px;
+}
+header .nav .out li.b a.B:hover {
+    display: block;
+    color: #89c1c5;
+    border-bottom: 4px solid #89c1c5;
+    
+}
+
+header .nav .out .b .detail li:hover {
+    border-bottom: 1px solid red;
+}
+header .nav li {
+    /* background: red; */
+    float: left;
+    /* padding-right: 30px; */
+    list-style: none;
+    font-size: 17px;
+    /* display: inline; */
+    height: 40px;
+}
+header .nav select {
+    margin-top: 20px;
+    /* float: left; */
+}
+header .title{
+    float: left;
+    width: 160px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+header .title a {
+    background: url('icon/logo.png') top / cover no-repeat;
+    margin: 10px;
+    padding: 5px;
+    z-index: 3000;
+    display: block;
+    background-size: 100% auto !important;
+    height: 30px;
+
+}
+header .title span{
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    
+}
+
+.container .top {
+    height: 300px;
+    background: url('icon/topbg.png') center / cover no-repeat;
+   
+}
+
+.container .top h1 {
+    text-align: center;
+    transform: translateY(130%);
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.container .top span {
+    display: block;
+    font-size: 15px;
+    font-weight: 450;
+    margin-top: 15px;
+}
+
+.container section {
+    border-bottom: 1px solid lightgray;
+}
+
+.container .home_menu {
+    height: 60px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container .home_menu #pic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url('icon/ico-home.png') #5aafae center no-repeat;
+}
+
+.container .home_menu ul {
+    width: 200px;
+    height: 60px;
+    /* display: block; */
+    font-size: 16px;
+    margin: 0 0 0 60px;
+    padding-left: 20px;
+    position: relative;
+
+    float: left;
+    line-height: 60px;
+    border-right: 1px solid lightgray;
+}
+
+/* .container .home_menu ul #list {
+    width: 100%;
+} */
+
+
+.container .home_menu li {
+    text-decoration: none;
+    display: none;
+}
+
+.container .home_menu li #list::after {
+    content: '';
+    background: url('icon/contNav-arr.png') skyblue no-repeat center;
+}
+
+.container .content {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.container .content h2 {
+
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.container .content .procedure ul {
+    border: 1px solid #d9d9d9;
+    width: 80%;
+    height: 250px;
+    box-sizing: border-box;
+
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .content .procedure .procedure_box li {
+    list-style: none;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}   
+
+.container .content .procedure .procedure_box .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid #d9d9d9;
+    background-color: #fafaf8 !important;
+}
+
+.container .content .procedure .procedure_box li:first-child .icon {
+    background: url('icon/recruit-ico01.png') no-repeat center /40px;
+}
+
+.container .content .procedure .procedure_box li:nth-child(n+2)::before {
+    content: '';
+    position: absolute;
+    left: -120%;
+    width: 30%;
+    height: 40%;
+    background: url('icon/guide-arrow.png') no-repeat center / 40px;
+}   
+
+.container .content .procedure .procedure_box li:nth-child(2) .icon {
+    background: url('icon/recruit-ico02.png') no-repeat center /40px;
+}
+
+.container .content .procedure .procedure_box li:last-child .icon {
+    background: url('icon/recruit-ico03.png') no-repeat center /40px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .container .content .procedure .procedure_box li:nth-child(n+2)::before {
+        left: -50%;
+        height: 40%;
+    }
+}
+
+.container .content .sub_comment {
+    line-height: 5px;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+.container .content .sub_comment span {
+    width: fit-content;
+    border-bottom: 1px solid blue;
+    color: blue;
+}
+
+.container .content .apply {
+    margin-top: 76px;
+}
+.container .content .apply h3 {
+    margin-bottom: 30px;
+}
+.container .content .apply .apltb {
+    border-top: 2px solid #000;
+    border-spacing: 0px;
+}
+.container .content .apply .apltb thead {
+   background: #fafafa;
+    font-weight: 100;
+}
+.container .content .apply .apltb th
+, .container .content .apply .apltb td {
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 20px 15px;
+    text-align: center;
+
+    font-family: sans-serif;
+    
+}
+.container .content .apply .apltb th {
+    font-weight: 600; 
+    font-size: 15px;
+}
+.container .content .apply .apltb tbody ul li {
+    list-style: '-';
+}
+.container .content .apply .apltb tbody tr td.rpart {
+    font-weight: 700;
+}
+.container .content .apply .apltb tr td.none:last-child {
+    border-right: 0px;
+}
+.container .content .apply .apltb tr td.none ul li {
+    list-style: '-';
+}
+.container .content .apply .apltb thead tr th:last-child {
+    border-right: 0px;
+} 
+.container .content .apply .apltb tr td:nth-child(5) {
+    text-align: left;
+}
+.container .content .apply .apltb tr td:last-child {
+    text-align: left;
+}
+.content .welfare {
+    width: 85%;
+    margin-top: 76px;
+}
+.content .welfare h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.content .welfare h3 span {
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+}
+.content .welfare ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 1000px;
+    padding: 0;
+ 
+}
+.content .welfare li {
+    height: 224px;
+    width: 23%;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid rgb(233, 233, 233);
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 40px;    
+}
+.content .welfare ul li div {
+    width: 60px;
+    height: 60px;
+}
+.content .welfare ul li p {
+    line-height: 20px;
+    margin: 0;
+}
+
+.content .welfare ul li p:nth-child(2) {
+    margin-top: 20px;
+    font-weight: 700;
+}
+.content .welfare ul li div img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+/* footer */
+/* footer */
+.total_footer {
+    background: #5AAfAE;
+    width: 100%;
+}
+.total_footer .sub_footer {
+    padding: 40px 20px;
+    margin: 0 auto;
+    width: 60%;
+}
+.total_logo {
+    padding-left: 170px;
+    position: relative;
+}
+.logo {
+    background: url('icon/f-logo.png') no-repeat left center;
+    width: 100px;
+    height: 30px;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+.total_footer .sub_footer .total_logo p {
+    color: #fff;
+    line-height: 15px;
+}
+
+.total_footer .sub_footer .total_logo .top_p a {
+    font-size: 13px;
+}
+.total_logo .mid_p {
+    margin-top: 20px;
+}
+.total_logo .mid_p {
+    margin-top: 20px;
+}
+.total_logo .add_p {
+    margin-top: 10px;
+}
+.total_logo .copy_p {
+    margin-top: 10px;
+}
+.total_logo .copy_p span{
+    font-size: 14px;
+}
+.total_logo .mid_p span {
+    font-weight: 400;
+    font-size: 14px;
+}
